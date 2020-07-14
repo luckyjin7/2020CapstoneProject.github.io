@@ -1,5 +1,9 @@
 <!DOCTYPE HTML>
-
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
 <html>
 	<head>
 		<title>Generic - Hyperspace by HTML5 UP</title>
@@ -16,7 +20,8 @@
 				<nav>
 					<ul>
 						<li><a href="index.html">Home</a></li>
-						<li><a href="generic.html" class="active">Details</a></li>
+						<li><a href="damageEquations.html" class="active">Details</a></li>
+<!--						<li><a href="elements.html">Elements</a></li>-->
 					</ul>
 				</nav>
 			</header>
@@ -27,16 +32,10 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Change Detection</h1>
-							<p>To quantify the changes, we extracted SIFT, SURF and ORB features from the pre and post-catastrophe environment and filtered out the high confidence values. These high-confidence features are visualized in the below. The pre-catastrophe images were observed to have low spatial resolution relative to post-catastrophe images. Therefore, we were able to identify more features from the post- catastrophe images. This discrepancy in the number of features caused a difficulty in identifying which features in the pre-catastrophe image were actually changed. This shows that working with the images in pixel space to identify the structural changes is difficult due to the observed discrepancy in spatial resolution.</p>
-							<ul class="imagetypes-1">
-								<img src="images/detect005.png" alt="">
-							</ul>
-							<br />
-							<ul class="imagetypes-1">
-								<img src="images/detect006.png" alt="">
-							</ul>
+							<h1 class="major">Damage Equations</h1>
+							<p>We modelled fragility equations which is used to quantify the extent of damage at a given location given the spectral displacement due to the quake at that location. This estimation can be used as an additional parameter to the path planning algorithm which can prioritize cells based on this estimation and also prune the generated synthetic samples. The damage state is estimated is classified according to European Macroseismic Scale (EMS-98) from DG1 to DG5. DG1 indicating negligible damage for a structure whereas DG5 indicating destruction. We were able to quantify the damage states for different zones based on structural density which is show in Figure below, we can infer that shanty zones are at a higher risk relative to others. This part of our work is a supplement and can be considered an experimental addition.</p>
 
+							<span class="image fit"><img src="images/equation001.png" alt="" /></span>
 						</div>
 					</section>
 

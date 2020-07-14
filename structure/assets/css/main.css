@@ -1,10 +1,5 @@
 @import url(fontawesome-all.min.css);
 
-/*
-	Hyperspace by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
 
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
@@ -99,6 +94,8 @@ input, select, textarea {
 
 	body {
 		background: #312450;
+		/*background: #ffffff;*/
+
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -181,12 +178,19 @@ input, select, textarea {
 		margin: 0 0 0.5em 0;
 	}
 
+	h1-1 {
+		color: #000000;
+		font-weight: bold;
+		line-height: 1.5;
+		margin: 0 0 0.5em 0;
+	}
+
 		h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 			color: inherit;
 			text-decoration: none;
 		}
 
-	h1 {
+	h1,h1-1 {
 		font-size: 2.75em;
 	}
 
@@ -197,6 +201,30 @@ input, select, textarea {
 		}
 
 			h1.major:after {
+				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
+				background-image: linear-gradient(to right, #5e42a6, #b74e91);
+				-moz-transition: max-width 0.2s ease;
+				-webkit-transition: max-width 0.2s ease;
+				-ms-transition: max-width 0.2s ease;
+				transition: max-width 0.2s ease;
+				border-radius: 0.2em;
+				bottom: 0;
+				content: '';
+				height: 0.05em;
+				position: absolute;
+				right: 0;
+				width: 100%;
+			}
+
+		h1-1.major {
+			margin: 0 0 1.3em 0;
+			position: relative;
+			padding-bottom: 0.35em;
+		}
+
+			h1-1.major:after {
 				background-image: -moz-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -webkit-linear-gradient(to right, #5e42a6, #b74e91);
 				background-image: -ms-linear-gradient(to right, #5e42a6, #b74e91);
@@ -237,6 +265,10 @@ input, select, textarea {
 	@media screen and (max-width: 736px) {
 
 		h1 {
+			font-size: 2em;
+		}
+
+		h1-1 {
 			font-size: 2em;
 		}
 
@@ -2559,6 +2591,7 @@ input, select, textarea {
 					color: #953d75;
 				}
 
+
 /* Image */
 
 	.image {
@@ -2807,7 +2840,7 @@ input, select, textarea {
 	ul.icons {
 		cursor: default;
 		list-style: none;
-		padding-left: 0;
+		padding: 0 0 0 0;
 	}
 
 		ul.icons li {
@@ -2826,6 +2859,57 @@ input, select, textarea {
 				ul.icons li > a .label, ul.icons li > span .label {
 					display: none;
 				}
+
+	ul.logotypes {
+  		max-width: 700px;
+  		margin: 0 auto;
+  		display: flex;
+  		flex-wrap: wrap;
+  		align-items: flex-start;
+  		justify-content: flex-start;
+			}
+
+	ul.logotypes img {
+  		margin-right: 30px;
+  		margin-bottom: 10px;
+  		width: auto;
+  		max-width: 400px;
+  		max-height: 120px;
+			}
+
+	ul.imagetypes {
+  		max-width: 700px;
+  		margin: 0 auto;
+  		display: flex;
+  		flex-wrap: wrap;
+  		align-items: center;
+  		justify-content: center;
+			}
+
+	ul.imagetypes img {
+  		margin-left: 5px;
+  		margin-bottom: 20px;
+  		width: auto;
+  		max-width: 1000px;
+  		max-height: 1000px;
+			}
+
+	ul.imagetypes-1 {
+  		max-width: 700px;
+  		margin: 0 auto;
+  		display: flex;
+  		flex-wrap: wrap;
+  		align-items: center;
+  		justify-content: center;
+			}
+
+	ul.imagetypes-1 img {
+		margin-left: 5px;
+		margin-bottom: 20px;
+		width: auto;
+		max-width: 1100px;
+		max-height: 1100px;
+			}
 
 /* Menu */
 
@@ -3211,6 +3295,50 @@ input, select, textarea {
 			width: 75em;
 		}
 
+		.left-1{
+    		height: 800px;
+    		line-height: 40px;
+    		text-align: justify;
+		}
+		.right-1 {
+    		height: 800px;
+    		line-height: 40px;
+    		text-align: left;
+  		}
+
+  		.left-1 {
+    		float: left;
+			font-size: 0.9em;
+    		width: 600px; /* 固定200px */
+  		}
+
+  		.right-1 {
+    		margin-left: 670px; /* 左边宽度再加10px空白 */
+			font-size: 1.1em;
+    		/*background-color: black;*/
+    		color: white;
+  		}
+
+		.left-2,
+		.right-2{
+			height: 550px;
+    		line-height: 40px;
+    		text-align: justify;
+		}
+
+		.left-2{
+			float: left;
+			font-size: 1.2em;
+			width: 560px;
+			color: white;
+		}
+
+		.right-2{
+			margin-left: 600px;
+			font-size: 1.2em;
+			color: white;
+		}
+
 			@media screen and (max-width: 1680px) {
 
 				.wrapper > .inner {
@@ -3256,7 +3384,7 @@ input, select, textarea {
 		}
 
 		.wrapper.style3 {
-			background-color: #b74e91;
+			background-color: #274B6E;
 		}
 
 		.wrapper.style3-alt {
@@ -3278,6 +3406,7 @@ input, select, textarea {
 			justify-content: center;
 			min-height: 100vh;
 		}
+
 
 			body.is-ie .wrapper.fullscreen {
 				height: 100vh;
