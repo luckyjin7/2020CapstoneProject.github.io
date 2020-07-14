@@ -191,7 +191,8 @@ input, select, textarea {
 		}
 
 	h1,h1-1 {
-		font-size: 2.75em;
+		/*font-size: 2.75em;*/
+		font-size: 2.30em;
 	}
 
 		h1.major {
@@ -243,11 +244,12 @@ input, select, textarea {
 			}
 
 	h2 {
-		font-size: 1.75em;
+		/*font-size: 1.75em;*/
+		font-size: 1.7em;
 	}
 
 	h3 {
-		font-size: 1.1em;
+		font-size: 1.0em;
 	}
 
 	h4 {
@@ -2963,7 +2965,7 @@ input, select, textarea {
 	}
 
 	header h3 + p {
-		font-size: 1.1em;
+		font-size: 0.9em;
 		margin-top: -0.8em;
 		line-height: 1.5em;
 	}
@@ -3314,7 +3316,7 @@ input, select, textarea {
 
   		.right-1 {
     		margin-left: 670px; /* 左边宽度再加10px空白 */
-			font-size: 1.1em;
+			font-size: 1.0em;
     		/*background-color: black;*/
     		color: white;
   		}
@@ -3328,14 +3330,14 @@ input, select, textarea {
 
 		.left-2{
 			float: left;
-			font-size: 1.2em;
+			font-size: 0.9em;
 			width: 560px;
 			color: white;
 		}
 
 		.right-2{
-			margin-left: 600px;
-			font-size: 1.2em;
+			margin-left: 500px;
+			font-size: 0.9em;
 			color: white;
 		}
 
@@ -4010,7 +4012,8 @@ input, select, textarea {
 	}
 
 		#intro p {
-			font-size: 1.25em;
+			/*font-size: 1.25em;*/
+			font-size: 1.2em;
 		}
 
 			@media screen and (max-width: 980px) {
