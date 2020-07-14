@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">CUSP Capstone 2020</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="GAN.html" class="active">Details</a></li>
+<!--						<li><a href="elements.html">Elements</a></li>-->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Generative Adversarial Networks(GAN)</h1>
+							<p>The collected images were pre-processed to change brightness and contrast as the pre and post-catastrophe images are taken during different timelines. These images were used to train deep learning models to generate more synthetic data. We trained a Pix2Pix network that uses paired images to convert from one domain to another. We also trained a CycleGAN network that performs unpaired image translation from one domain to another. We also modified the existing architecture of the generator module in CycleGAN. We replaced the classic UNet which is used as generator and replaced the backbone network from VGGNet to EfficientNet b3 and EfficientNet b4. The generated samples are shown in Figure 1-3. CycleGAN model with different backbone networks are able to generate better looking samples. </p>
+							<p>Evaluating the quality of the generated images by just looking at them is an inefficient and subjective way to decide if the images are good. In order to evaluate the generative model objectively, we used a metric similar to the inception score. We trained a CNN classifier that differentiates pre and post-catastrophe images by using the data we collected. We then feed the generated image from the GAN through our classifier and use the prediction the probability as a metric for evaluating the image. If the classifier was able to classify the image with high confidence(probability above a threshold) as post-catastrophe image, we can conclude that the generative model has done a good job. In evaluating our CycleGAN model with EffcientNet b3 and b4 as the backbone, we obtained over 90% probability from the classifier that the generated images are post-disaster.</p>
+							<ul class="imagetypes">
+								<img src="images/gan-r1.png" alt="">
+							</ul>
+								<p style="padding-left: 10.0em">(a) Generated samples from Pix2Pix&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) Generated samples from classic CycleGAN</p>
+							<ul class="imagetypes">
+								<img src="images/gan-r2.png" alt="">
+							</ul>
+								<p style="padding-left: 5.0em">(c) Generated samples from CycleGAN with EfficientNet b3 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(d) Generated samples from CycleGAN with EfficientNet b4</p>
+<!--								<img src="images/icon004.jpg" alt="">-->
+
+<!--							<span class="image fit">-->
+<!--									<img src="images/d007.png" alt="">-->
+<!--							</span>-->
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>Copyright &copy; 2020 All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
