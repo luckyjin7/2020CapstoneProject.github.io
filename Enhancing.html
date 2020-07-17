@@ -1,0 +1,74 @@
+<!DOCTYPE HTML>
+<!--
+	Hyperspace by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Generic - Hyperspace by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<a href="index.html" class="title">CUSP Capstone 2020</a>
+				<nav>
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="GAN.html" class="active">Details</a></li>
+<!--						<li><a href="elements.html">Elements</a></li>-->
+					</ul>
+				</nav>
+			</header>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+				<!-- Main -->
+					<section id="main" class="wrapper">
+						<div class="inner">
+							<h1 class="major">Enhancing Pre-disaster Images</h1>
+							<p style="text-align: justify"><strong>Interpolation methods - </strong>A diverse range of interpolation methods were applied to pixels to upsample the images including Nearest Neighbor, Bilinear and Bicubic interpolation.
+								The aforementioned methods are neither specified nor trained for the physical properties and contextual conditions (e.g., photogrammetric, spectrographic, refractive, atmospheric) inherent to satellite imagery.
+								Therefore, suffer from problems such as bleeding-edge border effects between adjacent pixels as well as within pixel averaging of values when spatial resolution higher than pixelation.
+							    Also, since these images are taken from altitudes over 200 miles, the adjacent pixel values in conjunction with within-pixel value averaging often tend to result in high degrees of conflated spectral and spatial uncertainty and ambiguity.
+							</p>
+							<p style="text-align: justify"><strong>Neural network based upsampling - </strong>Although the literature for image super-resolution (improving the resolution of the images) is considered to be extensive,
+								much of this literature is focused upon the aesthetic visual enhancement of images versus the accurate forensic validity of such enhancement.
+								Also, the state of the art models from this literature do not emphasize on satellite images and the models are trained on images from ground-based photodetection platforms.
+								Nevertheless, we tried a state of the art model, RDNet in an attempt to upsample these images and an example is shown below.
+							</p>
+							<ul class="imagetypes-2">
+								<img src="images/enhance-001.png" alt="">
+								<img src="images/enhance-002.png" alt="">
+								<img src="images/enhance-003.png" alt="">
+							</ul>
+								<p style="padding-left: 13.0em">(a) Original image&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(b) Bicubic interpolation&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;(c) RDNet upsampling</p>
+						</div>
+					</section>
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>Copyright &copy; 2020 All rights reserved.</li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

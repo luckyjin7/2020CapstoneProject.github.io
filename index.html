@@ -55,37 +55,36 @@
 				<!-- Intro -->
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
-							<div class="left-1">
-								<p>Natural disasters such as earthquakes and hurricanes can cause catastrophic damages to urban environments. Apart from damages to properties, there is a huge loss of lives.
-									The total number of deaths due to a disaster can be decreased if we locate and quantify the areas of extensive damage which can be done through mapping the post-catastrophe environment.
-									This will also help to better mobilize and allocate resources.
+<!--							<div class="left-1">-->
+								<p style="text-align: justify">Developing methods that allow drones to autonomously navigate in different environments has been a topic of extensive research in recent years.
+									This is mostly due to the ability of drones to navigate to places where it is dangerous for humans. Drones have been used to investigate penstocks and in search and rescue operations.
+									Using a swarm of drones that autonomously navigates in a post-catastrophe scenario to optimally map the disaster zone, i.e map the scenario as fast as possible has been a problem less explored.
 								</p>
 
-								<p>Drones are an ideal candidate for this scenario as they are small and agile.
-									Autonomous drones have been previously used for mapping penstocks and carrying out search and rescue operations. The process of mapping the post-catastrophe environment becomes much faster when we use a swarm of drones and the operation becomes more robust to failures and noise inherent in measurements.
-									This allows coverage of every nook and corner which in turn reduces the emergency response time. The drones cannot rely on GPS signals for navigation as it can get obfuscated in post-catastrophe urban environments.
-									Using a swarm of drones that navigate autonomously in a GPS deprived scenario is a problem that has not been extensively studied.
+								<p style="text-align: justify">Mapping the post-catastrophe environment allows estimating the structural damages. In this work, we would like to attempt at demonstrating an approach which utilizes reinforcement learning to enable drones to perform path planning and optimally map the entire post-catastrophe environment.
+									We try to demonstrate this in a simulation. The optimal path planning of the drones will happen at the edge, i.e on the drones and it has to adapt dynamically to the changes in the environment.
+									We take up the 2010 Haiti earthquake as an example and attempt to demonstrate methods that would help to identify structural changes from satellite images, generate synthetic data and construct fragility equations which can be used for assessing damage state at a location with a level of uncertainty.
 								</p>
-							</div>
-							<div class="right-1">
-								<strong>Challenges we met include:</strong>
-								<br />
-								<br />
-								<article>For Multi-Agent Path Planning part,</article>
-								<li>Optimally cover the environment</li>
-								<li>Limited bandwidth and low power drones</li>
-								<li>Multi-agent collaboration with only local connectivity</li>
-								<li>Adaptability and resilience to environment and operational changes</li>
-								<li>Damage equations help prioritization during the path planning and GNN</li>
+<!--							</div>-->
+<!--							<div class="right-1">-->
+<!--								<strong>Challenges we met include:</strong>-->
+<!--								<br />-->
+<!--								<br />-->
+<!--								<article>For Multi-Agent Path Planning part,</article>-->
+<!--								<li>Optimally cover the environment</li>-->
+<!--								<li>Limited bandwidth and low power drones</li>-->
+<!--								<li>Multi-agent collaboration with only local connectivity</li>-->
+<!--								<li>Adaptability and resilience to environment and operational changes</li>-->
+<!--								<li>Damage equations help prioritization during the path planning and GNN</li>-->
 
-								<br />
-								<article>For Change Detection of Images part,</article>
-								<li>Efficiently detect the changes of post-catastrophe environment</li>
-								<li>Low computing power requirement for the drones</li>
-								<li>Limited paired images data before and after disasters might affect the diversity for generating synthetic data</li>
-								<li>Low resolution of output images</li>
+<!--								<br />-->
+<!--								<article>For Change Detection of Images part,</article>-->
+<!--								<li>Efficiently detect the changes of post-catastrophe environment</li>-->
+<!--								<li>Low computing power requirement for the drones</li>-->
+<!--								<li>Limited paired images data before and after disasters might affect the diversity for generating synthetic data</li>-->
+<!--								<li>Low resolution of output images</li>-->
 
-							</div>
+<!--							</div>-->
 						</div>
 					</section>
 
@@ -103,30 +102,30 @@
 								</div>
 							</div>
 						</section>
-						<section>
-							<a href="#" class="image"><img src="images/d002.png" alt="" data-position="top center" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>LiDAR data</h2>
-									<p>LiDAR point cloud data after the Haiti earthquake (2010/01/21~2010/01/27) by OpenTopography</p>
-									<ul class="actions">
-										<li><a href="https://opentopography.org/news/post-january-2010-haiti-earthquake-lidar-data-now-available-opentopography" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
-						<section>
-							<a href="#" class="image"><img src="images/d003.jpg" alt="" data-position="25% 25%" /></a>
-							<div class="content">
-								<div class="inner">
-									<h2>Sensor data</h2>
-									<p>ROS bag-files, radio signal strength and team communication data collected on earthquake damages by TRADR</p>
-									<ul class="actions">
-										<li><a href="http://www.tradr-project.eu/resources/datasets/" class="button">Learn more</a></li>
-									</ul>
-								</div>
-							</div>
-						</section>
+<!--						<section>-->
+<!--							<a href="#" class="image"><img src="images/d002.png" alt="" data-position="top center" /></a>-->
+<!--							<div class="content">-->
+<!--								<div class="inner">-->
+<!--									<h2>LiDAR data</h2>-->
+<!--									<p>LiDAR point cloud data after the Haiti earthquake (2010/01/21~2010/01/27) by OpenTopography</p>-->
+<!--									<ul class="actions">-->
+<!--										<li><a href="https://opentopography.org/news/post-january-2010-haiti-earthquake-lidar-data-now-available-opentopography" class="button">Learn more</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</section>-->
+<!--						<section>-->
+<!--							<a href="#" class="image"><img src="images/d003.jpg" alt="" data-position="25% 25%" /></a>-->
+<!--							<div class="content">-->
+<!--								<div class="inner">-->
+<!--									<h2>Sensor data</h2>-->
+<!--									<p>ROS bag-files, radio signal strength and team communication data collected on earthquake damages by TRADR</p>-->
+<!--									<ul class="actions">-->
+<!--										<li><a href="http://www.tradr-project.eu/resources/datasets/" class="button">Learn more</a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</section>-->
 					</section>
 
 				<!-- Two -->
@@ -146,6 +145,11 @@
 									<p style="white-space:nowrap"><h3><strong style="font-size:200%">G</strong>enerative Adversarial Networks(GAN)</h3></p>
 									<p>GAN is used to produce synthetic data which can increase the amount of paired pre and post-catastrophe images to train the agents (i.e drones).</p>
 									<h3><a href="GAN.html">Learn more</a></h3>
+								</section>
+								<section>
+									<p style="white-space:nowrap"><h3><strong style="font-size:200%">E</strong>nhancing pre-disaster images</h3></p>
+									<p>The upsampling methods are attempted to explore emulating the post-disaster image resolution, although fully acknowledging the joint hypothesis problem as a limitation to this approach.</p>
+									<h3><a href="Enhancing.html">Learn more</a></h3>
 								</section>
 								<section>
 <!--									<span class="icon solid major fa-cog"></span>-->
@@ -203,10 +207,9 @@
 							</div>
 							<div class="right-2">
 								<h2>Advisors:</h2>
-								<strong style="font-size:1.0em">Dr. David K A Mordecai, Professor</strong>
+								<strong style="font-size:1.2em">Dr. David K A Mordecai, Professor</strong>
 								<br />
-								<strong style="font-size:1.0em">Dr. Giuseppe Loianno, Professor</strong>
-								<br />
+								<strong style="font-size:1.2em">Dr. Giuseppe Loianno, Professor</strong>
 								<br />
 
 								<br />
@@ -216,12 +219,12 @@
 									<a href="https://wp.nyu.edu/arpl/"><img src="images/icon004.jpg" alt=""></a>
 								</ul>
 								<br />
-								<article>Support: RiskEconLab@CourantNYU</article>
-								<article style="padding-left:8.0em">NYU Agile Robotics and Perception Lab (ARPL)</article>
+								<article>Support: RiskEcon® Lab for Decision Metrics @ Courant NYU</article>
+								<article style="padding-left:4.0em">Agile Robotics and Perception Lab (ARPL) @ Tandon NYU</article>
 
 							</div>
 							<br />
-							<p style="font-size:0.9em">We would like to sincerely thank Joseph Bullock (AI Researcher at UNGP), Dr. Debra Laefer (New York University) and Dr. Ufuk Hancilar (Bogazici University) for their helpful feedback and suggestions in this project. </p>
+							<p style="font-size:0.9em">We would like to sincerely thank Joseph Bullock (AI Researcher at UNGP and PhD Researcher at Durham University), Dr. Debra Laefer (New York University) and Dr. Ufuk Hancilar (Bogazici University) for their helpful feedback and suggestions to this project.</p>
 
 
 						</div>
