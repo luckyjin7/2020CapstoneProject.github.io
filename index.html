@@ -45,7 +45,7 @@
 								<video controls width="1000" height="600">
 									<source src="./assets/drone_swarm.mp4" type="video/mp4"> 
 								</video> 
-								<p style="padding-left: 23.0em">An example of 3D simulation</p>
+							<p style="padding-left: 2.0em">An example of 3D simulation. (The code for the 3D simulation is taken and modified from <a href="https://github.com/sgowal/swarmsim">https://github.com/sgowal/swarmsim</a>)</p>
 						</div>
 					</section>
 
@@ -53,12 +53,12 @@
 					<section id="intro" class="wrapper style1 fullscreen fade-up">
 						<div class="inner">
 <!--							<div class="left-1">-->
-								<p style="text-align: justify">Developing methods that allow drones to autonomously navigate in different environments has been a topic of extensive research in recent years. One rationale for interest in autonomous drone navigation is the manoeuvrability and capability of drones to navigate inaccessible environments and situations that might be too risky for human access.
+								<p style="text-align: justify">Developing methods that allow drones to autonomously navigate in different environments has been a topic of extensive research in recent years. One research topic of interest in autonomous drone navigation is to explore the maneuverability and capability of drones to navigate inaccessible environments and situations that might be too risky for human access.
 									Using a swarm of drones that autonomously navigate a post-catastrophe scenario in order to optimally map the disaster zone, i.e independently and efficiently identify and map the structural damage across a geographic site has been a problem less explored. Detection and mapping changes across a post-catastrophe site enables a more robust estimation of structural damage.
 								</p>
 
 								<p style="text-align: justify">This project attempted to explore and simulate a reinforcement learning approach to enable drones to perform task assignment and scheduling in order to efficiently maximize coverage for identifying and mapping structural changes within the post-catastrophe environment.
-									The primary objective of the simulation was to focus on the exploration of ad-hoc decentralized task assignment and scheduling by a drone at the edge with minimal connectivity aside from local communication between nearest neighbors.
+									The primary objective of the simulation was to focus on the exploration of ad-hoc decentralized task assignment and scheduling by one or more drones at the edge with minimal connectivity aside from local communication between nearest neighbors.
 									Other workstreams in the project explored satellite and aerial imagery, seismic structural damage equation models, and generative adversarial networks (GANs) related to the Port-au-Prince 2010 Haiti earthquake site as a use case and attempt to explore methods that might be utilized to identify structural changes from satellite images, using generative synthetic data and estimated fragility equations in order to address uncertainty and ambiguity in the detection of discrepancies in edges related to damage.
 								</p>
 <!--							</div>-->
@@ -91,9 +91,9 @@
 							<div class="content">
 								<div class="inner">
 									<h2>Aerial Images</h2>
-									<p>Satellite images taken after the Haiti earthquake (2010/01/13~2010/01/21) by Google maps and GeoEye</p>
+									<p>Satellite images taken after the Haiti earthquake (2010/01/13~2010/01/21) by Google maps and GeoEye and a sample is shown on the left.</p>
 									<ul class="actions">
-										<li><a href="https://maps.googleblog.com/2010/01/haiti-imagery-layer-now-available.html" class="button">Learn more</a></li>
+										<li><a href="https://maps.googleblog.com/2010/01/haiti-imagery-layer-now-available.html" class="button">Learn more (Redirects to an official website)</a></li>
 									</ul>
 								</div>
 							</div>
@@ -127,7 +127,7 @@
 				<!-- Two -->
 					<section id="two" class="wrapper style3 fade-up">
 						<div class="inner">
-							<h2>What we do</h2>
+							<h2>What we did?</h2>
 							<p>There are multiple facets to this project which are elucidated in detail below.</p>
 							<div class="features">
 								<section>
@@ -138,7 +138,7 @@
 								</section>
 								<section>
 <!--									<span class="icon solid major fa-lock"></span>-->
-									<p style="white-space:nowrap"><h3><strong style="font-size:200%">G</strong>enerative Adversarial Networks(GAN)</h3></p>
+									<p style="white-space:nowrap"><h3><strong style="font-size:200%">G</strong>enerative Adversarial Networks</h3></p>
 									<p>GAN is used to produce synthetic data which can increase the amount of paired pre and post-catastrophe images to train the agents (i.e drones).</p>
 									<h3><a href="GAN.html">Learn more</a></h3>
 								</section>
@@ -149,7 +149,7 @@
 								</section>
 								<section>
 <!--									<span class="icon solid major fa-cog"></span>-->
-									<p style="white-space:nowrap"><h3><strong style="font-size:200%">S</strong>imulations & Reinforcement Learning(RL)</h3></p>
+									<p style="white-space:nowrap"><h3><strong style="font-size:200%">S</strong>imulations & Reinforcement Learning</h3></p>
 									<p>Custom simulation is built to replicate our tasks, i.e. optimally map the entire environment, in order to train and evaluate the learning algorithm.</p>
 									<h3><a href="Simulations.html">Learn more</a></h3>
 								</section>
