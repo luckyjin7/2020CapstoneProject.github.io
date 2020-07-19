@@ -3359,12 +3359,12 @@ input, select, textarea {
 		.left-2{
 			float: left;
 			font-size: 0.9em;
-			width: 540px;
+			width: 500px;
 			color: white;
 		}
 
 		.right-2{
-			margin-left: 620px;
+			margin-left: 580px;
 			font-size: 0.9em;
 			color: white;
 		}
