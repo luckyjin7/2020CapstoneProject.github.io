@@ -4,4 +4,4 @@ Free for personal and commercial use under the CCA 3.0 license (html5up.net/lice
 
 
 Click here:
-https://yuejinyz.github.io/2020CapstoneProject.github.io/
+https://luckyjin7.github.io/2020CapstoneProject.github.io/
